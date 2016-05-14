@@ -23,11 +23,11 @@ li {
 
 .black-box {
 	background-color: black;
-	height: 200px;
+	height: 250px;
 	margin-top: 30px;
 }
 
-a:hover .black-box, footer a:hover, h1 a:hover, li a:hover {
+a:hover .black-box, footer a:hover, h1 a:hover, li a:hover, a:hover {
 	opacity: 0.8;
 }
 
@@ -62,19 +62,48 @@ footer p {
 	font-style: italic;
 }
 
-#hover { 
-	display: none; 
+section p {
+	margin-top: 40px;
 }
 
-.black-box:hover #hover { 
-	display: block; 
+.fixed-back, .fixed-next {
+  position: fixed;
+  top: 32%;
 }
 
-span {
-	color: white;
-	font-size: 30px;
-	font-weight: 900;
-	text-align:center;
-	padding-top: 75px;
+.fixed-back {
+  left: 0;
+}
+
+.fixed-next {
+  right: 0;
+}
+
+#back {
+	background-color: black;	
+	height: 300px;
+	width: 50px;
+}
+
+#next {
+	background-color: black;
+	height: 300px;
+	width: 50px;
+}
+
+#nedco {
+   background: url(../img/nedco-bw.jpg) no-repeat;
+   height: 250px;
+   margin-top: 30px;
+}
+
+#nedco:hover {
+   background: url(../img/nedco.jpg) no-repeat;
+}
+
+@media (max-width: 680px) {
+	.fixed-back, .fixed-next {
+		display: none;
+	}
 }
 
