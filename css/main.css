@@ -12,6 +12,13 @@ h1 {
 	text-align: center;
 }
 
+#logo-size {
+	height: 50px;
+	float: left;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
 li {
 	list-style: none;
 	display: inline;
@@ -21,13 +28,14 @@ li {
 	font-weight: 800;
 }
 
-.black-box {
+
+.project-thumbs {
 	background-color: black;
 	height: 250px;
 	margin-top: 30px;
 }
 
-a:hover .black-box, footer a:hover, h1 a:hover, li a:hover, a:hover {
+a:hover .project-thumbs, footer a:hover, h1 a:hover, li a:hover, a:hover, #logo-size:hover{
 	opacity: 0.8;
 }
 
@@ -48,7 +56,7 @@ footer {
 
 h2 {
 	text-transform: uppercase;
-	font-size: 100px;
+	font-size: 7rem;
 	font-weight: 900;
 }
 
@@ -91,19 +99,61 @@ section p {
 	width: 50px;
 }
 
-#nedco {
-   background: url(../img/nedco-bw.jpg) no-repeat;
-   height: 250px;
-   margin-top: 30px;
+img {
+  filter: none;
+  -webkit-filter: grayscale(100%);
+}
+img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
 }
 
-#nedco:hover {
-   background: url(../img/nedco.jpg) no-repeat;
-}
-
-@media (max-width: 680px) {
+@media (max-width: 639px) {
+	#tandem {
+	   background: url(../img/tandem-bw.jpg) no-repeat;
+	   margin-top: 30px;
+	   background-size: center;
+	}
+	
 	.fixed-back, .fixed-next {
 		display: none;
 	}
+	
+	#logo-size {
+		float:none;
+	}
+	
+	.small-back {
+  		left: 0;
+	}
+
+	.small-next {
+  		right: 0;
+	}
+
+	#show-small-back {
+		background-color: black;	
+		height: 30px;
+		width: 100px;
+		margin-top: 25px;
+		float:left;
+	}
+
+	#show-small-next {
+		background-color: black;
+		height: 30px;
+		width: 100px;
+		float: right;
+		margin-top: 25px;
+	}
+	
+	nav {
+		margin-right:40px;
+	}
+	
+	li {
+		padding-top:0px;
+	}
 }
+
 
