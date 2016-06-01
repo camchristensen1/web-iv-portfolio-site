@@ -28,6 +28,9 @@ li {
 	font-weight: 800;
 }
 
+img {
+	margin-top: 30px;
+}
 
 .project-thumbs {
 	background-color: black;
@@ -35,9 +38,14 @@ li {
 	margin-top: 30px;
 }
 
-a:hover .project-thumbs, footer a:hover, h1 a:hover, li a:hover, a:hover, #logo-size:hover{
+footer a:hover, h1 a:hover, #back:hover, #next:hover, #logo-size:hover, .fixed-back:hover, .fixed-next:hover {
 	opacity: 0.8;
 }
+
+ li a:hover {
+	 color: black;
+	 border-bottom: black solid;
+ }
 
 footer {
 	background-color: black;
@@ -88,22 +96,25 @@ section p {
 }
 
 #back {
-	background-color: black;	
 	height: 300px;
 	width: 50px;
 }
 
 #next {
-	background-color: black;
 	height: 300px;
 	width: 50px;
 }
 
-img {
+#header-small {
+	font-size: 80px;
+}
+
+.hover-img {
   filter: none;
   -webkit-filter: grayscale(100%);
 }
-img:hover {
+
+.hover-img:hover {
   filter: none;
   -webkit-filter: grayscale(0%);
 }
@@ -148,11 +159,15 @@ img:hover {
 	}
 	
 	nav {
-		margin-right:40px;
+		margin-right: 40px;
 	}
 	
 	li {
-		padding-top:0px;
+		padding-top: 0px;
+	}
+	
+	h2 {
+		font-size: 60px;
 	}
 }
 
