@@ -1,22 +1,18 @@
 @charset "UTF-8";
 /* CSS Document */
 
-body {
-	border: solid black;
-	border-width: 20px;
-}
+/* TABLE OF CONTENTS
+	1.0 Typography
+	2.0 Images
+	3.0 Buttons
+*/
+
+/* --------------- 1.0 Typography ---------------*/
 
 h1 { 
 	color: orange;
 	font-size: 100px;
 	text-align: center;
-}
-
-#logo-size {
-	height: 50px;
-	float: left;
-	margin-top: 40px;
-	margin-bottom: 40px;
 }
 
 li {
@@ -28,30 +24,10 @@ li {
 	font-weight: 800;
 }
 
-img {
-	margin-top: 30px;
-}
-
-.project-thumbs {
-	background-color: black;
-	height: 250px;
-	margin-top: 30px;
-}
-
-footer a:hover, h1 a:hover, #back:hover, #next:hover, #logo-size:hover, .fixed-back:hover, .fixed-next:hover {
-	opacity: 0.8;
-}
-
- li a:hover {
-	 color: black;
-	 border-bottom: black solid;
- }
-
-footer {
-	background-color: black;
-	margin-top: 80px;
-	text-align:center;
-	padding-top: 30px;
+h2 {
+	text-transform: uppercase;
+	font-size: 7rem;
+	font-weight: 900;
 }
 
 .center, .middle {
@@ -60,12 +36,6 @@ footer {
 
 .center {
 	text-align:center;
-}
-
-h2 {
-	text-transform: uppercase;
-	font-size: 7rem;
-	font-weight: 900;
 }
 
 nav a {
@@ -82,7 +52,52 @@ section p {
 	margin-top: 40px;
 }
 
-.fixed-back, .fixed-next {
+/* --------------- End Typography --------------- */
+
+/* --------------- 2.0 Images ---------------*/
+
+
+body {
+	border: solid black;
+	border-width: 20px;
+}
+
+#logo-size {
+	height: 50px;
+	float: left;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+img {
+	margin-top: 30px;
+}
+
+.small-logo {
+	height: 50px;
+}
+
+footer {
+	background-color: black;
+	margin-top: 80px;
+	text-align:center;
+	padding-top: 30px;
+}
+
+/* --------------- End Images --------------- */
+
+/* --------------- 3.0 Buttons ---------------*/
+
+footer a:hover, h1 a:hover, #back:hover, #next:hover, #logo-size:hover, .fixed-back:hover, .fixed-next:hover {
+	opacity: 0.8;
+}
+
+ li a:hover {
+	 color: black;
+	 border-bottom: black solid;
+ }
+ 
+ .fixed-back, .fixed-next {
   position: fixed;
   top: 32%;
 }
@@ -95,20 +110,6 @@ section p {
   right: 0;
 }
 
-#back {
-	height: 300px;
-	width: 50px;
-}
-
-#next {
-	height: 300px;
-	width: 50px;
-}
-
-#header-small {
-	font-size: 80px;
-}
-
 .hover-img {
   filter: none;
   -webkit-filter: grayscale(100%);
@@ -118,6 +119,18 @@ section p {
   filter: none;
   -webkit-filter: grayscale(0%);
 }
+
+#back {
+	height: 300px;
+	width: 50px;
+}
+
+#next {
+	height: 300px;
+	width: 50px;
+}
+ 
+ /* --------------- End Buttons --------------- */
 
 @media (max-width: 639px) {
 	#tandem {
@@ -168,6 +181,10 @@ section p {
 	
 	h2 {
 		font-size: 60px;
+	}
+	
+	#header-small {
+	font-size: 50px;
 	}
 }
 
